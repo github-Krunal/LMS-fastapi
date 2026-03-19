@@ -11,5 +11,5 @@ def create_user_api(user: UserCreate, db: Session = Depends(get_db)):
     user = create_user(db, user)
     return {
         "message": "Student created successfully",
-        "user_id": user.Id
+        "user_id": user.id
     }

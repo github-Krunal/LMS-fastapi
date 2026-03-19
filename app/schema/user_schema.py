@@ -4,4 +4,5 @@ class UserCreate(BaseModel):
     username: str
     email: str
     password: str
-    role:str="student"
+    name: str
+    role: str = "student",
